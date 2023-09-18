@@ -11,12 +11,12 @@ default: &default
 
 development:
   <<: *default
-  database: <%= ENV.fetch("DB_USERNAME", "tms_development") %>
+  database: <%= ENV.fetch("DB_NAME", "tms_development") %>
 
 test:
   <<: *default
-  database: <%= ENV.fetch("DB_USERNAME", "tms_test") %>
+  database: <%= ENV.fetch("DB_NAME", "tms_test") %>
 
 production:
   <<: *default
-  database: <%= ENV.fetch("DB_USERNAME", "tms_production") %>
+  database: <%= ENV.fetch("DB_NAME", "tms_production") %>
