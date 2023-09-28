@@ -19,6 +19,11 @@ module Tms
     # in config/environments, which are processed later.
     #
     config.time_zone = "Tokyo"
+
+    # Config locale
+    config.i18n.available_locales = [:en, :ja]
+    config.default_locale = :ja
+  
     # config.eager_load_paths << Rails.root.join("extras")
   end
 end
